@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "fuente";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+}
+
+body{
+  margin: 0;
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  margin: 0;
+  align-items: center;
+  width: 99vw;
+  height: 7vh;
+  background-color: rgba(255, 190, 203, 0.600);
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f57e;
+  box-shadow: 1px 0px 4px rgba(109, 109, 109, 0.346);
+}
+
+#header-contenedor{
+  display: flex;
+  grid-area: header;
+  height: 9vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 190, 203, 0.515);
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom: 2px solid #0000000c;
+}
+
+#nav{
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  font-family: "fuente";
+  justify-content: end;
+  width: 20vw;
+  align-self: center;
+}
+
+#logo{
+  width: 15vw;
+  height: 7vh;
+  align-self: center;
+}
+
+#header>#logo{
+  display: flex;
+  width: 10%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+#header>#logo>img{
+  display: block;
+  width: 55%;
+  height: 100%;
+  border: 1px solid rgba(222, 222, 222, 0.513);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.121);
+}
+
+#header-contenedor > input:focus{
+  outline-style: none;
+}
+
+nav > .container-nav{
+  border-right: 1px solid rgba(94, 94, 94, 0.206);
+  border-left: 1px solid rgba(94, 94, 94, 0.206);
+  line-height: 75%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+nav > .container-nav:first-child{
+  border-right: none;
+}
+
+nav > .container-nav:last-child{
+  border-left: none;
+}
+
+
+.container-nav> p{
+  font-size: 1.1rem;
+}
+
+.container-nav > p > a{
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+.container-nav > p > a:hover{
+  color: #343434;
+}
+
+#carpeta-principal{
+  display: block;
+  width: 10vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "fuente";
+  margin-left: 22vw;
+  margin-top: 8vh;
+}
+
+.carpeta-principal-focus{
+  border: 1px solid gainsboro;
+  background-color: #343434;
+}
+
+#carpeta-principal > img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
